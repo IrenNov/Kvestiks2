@@ -1,0 +1,85 @@
+$font-family-base: 'Open Sans', sans-serif, arial;
+$body-color: #222226;
+
+$body-bg: #fafafa;
+$main-orange: #f77833;
+$link-color: #383838;
+$link-decoration: underline;
+$link-hover-color: #ec5d10;
+$link-hover-decoration: none;
+
+$black:    #000 !default;
+$white:    #fff !default;
+
+
+
+$pink: #f18289;
+$beige: #eadecc;
+$gray: #797980;
+$gray-light: #e0e0e0;
+$gray-light2: #cdcdce;
+$gray-light3: #f5f5f5;
+$violet: #cc00ff;
+$red: #f00;
+$dark-green: #096671;
+$yellow: #ffd06e;
+$yellow2: #FFE141;
+$purple: #c759d8;
+$gray-dark: #43494B;
+
+//Оранжевый
+$flag-orange: #ffab32;
+//Фиолетовый
+$flag-violet: #cc00ff;
+//Темно-оранжевый
+$flag-dark-orange: #fa753f;
+//Сиреневый
+$flag-purple: #c759d8;
+//Голубой
+$flag-blue: #586cfe;
+//Зеленый
+$flag-green: #3a9683;
+//Бежевый
+$flag-beige: #97697c;
+//Розовый
+$flag-pink: #ed4e9a;
+// Салатовый
+$flag-green2: #6e9504;
+$flag-gray: #8B7C9B;
+
+
+$btn-border-radius: 6px;
+$btn-font-weight: 700;
+
+$btn-padding-y-sm: .344rem;
+$btn-padding-y: .657rem;
+$btn-padding-y-lg: .969rem;
+
+$btn-padding-x-sm: .75rem;
+$btn-padding-x: 1rem;
+$btn-padding-x-lg: 1.5rem;
+
+$btn-font-size-sm: 1rem;
+$btn-font-size: 1rem;
+$btn-font-size-lg: 1rem;
+
+$breadcrumb-font-size: 75%;
+$breadcrumb-bg: inherit;
+$breadcrumb-padding-x: 0;
+$breadcrumb-padding-y: 20px;
+$breadcrumb-divider: '→';
+$breadcrumb-item-padding: 5px;
+$breadcrumb-margin-bottom: 0;
+
+$modal-sm: 400px;
+$modal-md: 620px;
+$modal-content-bg: $body-bg;
+$modal-header-border-width: 0;
+$modal-footer-border-width: 0;
+$modal-content-border-radius: 0;
+$modal-header-padding-y: 30px;
+$modal-header-padding-x: 30px;
+$modal-inner-padding: 1.88rem;
+
+$alert-border-radius: 0;
+$enable-negative-margins: true;

@@ -1,0 +1,217 @@
+@import "fonts";
+
+$primary: #424242;
+$secondary: #383838;
+$light:  #5e5e5e;
+$superlight: #868686;
+
+$font-family-base: 'Open Sans', sans-serif, arial;
+$body-bg: #F5F5F5;
+$link-color: #383838;
+$body-color: #737373;
+$main-orange: #f77833;
+$link-color: #383838;
+$link-decoration: underline;
+$link-hover-color: #ec5d10;
+$link-hover-decoration: none;
+$breadcrumb-divider-color:  #424242;
+$breadcrumb-active-color: #424242;
+
+$nav-link-padding-x: 0;
+$nav-link-font-size: 10px;
+$nav-link-font-weight: 600;
+
+$primary: #424242;
+$font-weight-light: 400;
+$font-weight-normal: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: 800;
+$h2-font-size: 36px;
+$h3-font-size: 28px;
+$h6-font-size: 14px;
+$line-height-sm: 1.3;
+
+$breadcrumb-margin-bottom: 15px;
+$breadcrumb-font-size: 14px;
+$breadcrumb-padding-y: 20px;
+$breadcrumb-divider: "→";
+
+$btn-font-family: 'Open Sans', sans-serif, arial;
+$btn-font-weight: 700;
+$btn-line-height: 1.25;
+$btn-white-space: none;
+$btn-border-radius: 7px;
+$btn-font-size: 16px;
+$btn-padding-x: 16px;
+$btn-padding-y: 24px;
+$btn-primary-bg: #f77833;
+$btn-primary-color: #fff;
+$btn-primary-border-color: #f77833;
+$btn-transition: 0.2s;
+
+
+
+@import "../scss/bootstrap";
+@import "../scss/bootstrap-utilities";
+@import "../scss/bootstrap-reboot";
+@import "../scss/bootstrap-grid";
+
+
+@import "../scss/functions";
+@import "../scss/variables";
+@import "../scss/mixins";
+
+
+@import "../scss/reboot";
+@import "../scss/grid";
+@import "../scss/buttons";
+@import "../scss/forms";
+
+@import "./blocks/popup_menu";
+@import "./blocks/burger";
+@import "./blocks/slidbar";
+@import "./blocks/buttons";
+
+
+
+.header-wrap {
+  
+  height: 44px;
+  line-height: 110%;
+
+  @include media-breakpoint-up(lg) {
+    line-height: 110%;
+    height: 56px;
+  }
+
+  .logo-img {
+    padding: 8.5px 7.5px;
+
+    @include media-breakpoint-down(sm) {
+      width: 104px;
+      padding: 0;
+    }
+  }
+}
+
+.navbar-nav {
+  gap: 30px;
+
+  .nav-item .nav-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1116px;
+  }
+}
+
+
+.header-wrap+.content-wrapper {
+  margin-top: 50px;
+  min-height: 350px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 60px;
+  }
+}
+.content-box {
+  box-shadow: 0 1px 4px 0 rgba($black, 0.08);
+  background: $white;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .image-section {
+    background-image: url(../images/image_section.png); 
+    background-size: cover;
+    background-position: center right;
+    min-height: 360px;  
+    border-radius: inherit; 
+    margin-inline: 5px;
+  }
+  .gray-box {
+    background: rgba(28, 28, 28, 0.05);
+    border-radius: 3px;
+    color: $secondary;
+    font-weight: $font-weight-normal;
+    font-size: $h6-font-size;
+    padding: 6px 12px;
+    line-height: $line-height-sm;
+  }
+}
+.gray-label-small {
+  color: rgba(56, 56, 56, 0.8);
+  font-size: 13px;
+  display: block;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.fs14 {
+  font-size: .88rem;
+}
+.link-orange-text {
+  color: #dd4e00;
+}
+
+
+.payment-logo {
+  height: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.payment-logo-sberbank {
+  @extend .payment-logo;
+  background-image: url("../images/logo_sberbank.svg");
+}
+.payment-logo-mir {
+  @extend .payment-logo;
+  background-image: url("../images/logo_mir.svg");
+}
+.payment-logo-visa {
+  @extend .payment-logo;
+  background-image: url("../images/logo_visa.svg");
+}
+
+.payment-logo-mastercard {
+  @extend .payment-logo;
+  background-image: url("../images/logo_mastercard.svg");
+}
+.btn-orange {
+  box-shadow: 0 1px 3px 1px rgba(188, 66, 0, 0.15);
+  @include button-variant(
+    #f77833,   // Цвет фона
+    #f77833,   // Цвет границы
+    #fff,      // Цвет текста
+    darken(#f77833, 10%),  // Цвет фона при наведении
+    darken(#f77833, 10%)   // Цвет границы при наведении
+  );
+  padding: 15px 24px;   // Отступы
+  border-radius: 7px;   // Радиус скругления
+  font-size: 16px;      // Размер шрифта
+  font-weight: 700;     // Толщина шрифта
+  line-height: 1.25;    // Высота строки
+  white-space: normal;  // Перенос строк
+  transition: 0.2s;     // Переход
+}
+.paid-cart {
+  max-height: 230px;
+}
+
+.top-skin {
+  z-index: 2;
+}
+.cart-img {
+  height: 360px; 
+  @include media-breakpoint-up(lg) {
+    
+  padding-left: 325px;
+  }
+}
+

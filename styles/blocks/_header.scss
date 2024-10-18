@@ -1,0 +1,64 @@
+.header-wrap {
+    box-shadow: 0 1px 4px 0 rgba($black, 0.08);
+    background: $white;
+    height: 44px;
+    line-height: 44px;
+    @include media-breakpoint-up(lg) {
+      line-height: 56px;
+      height: 56px;
+    }
+  
+    .logo-img {
+        padding: 8.5px 7.5px;
+    }
+
+    .header-phone-wrap {
+      line-height: 1.1;
+      margin: 11px auto 0 auto;
+      @include media-breakpoint-up(lg) {
+        line-height: inherit;
+        margin: auto;
+      }
+  
+      .phone {
+        vertical-align: top;
+        font-weight: 800;
+        text-decoration: none;
+        color: $body-color;
+  
+        @include media-breakpoint-up(lg) {
+          font-size: 150%;
+        }
+  
+        &:hover {
+          color: $link-hover-color;
+  
+          .icon {
+            color: $body-color;
+          }
+        }
+  
+        .icon {
+          font-size: 200%;
+          @include media-breakpoint-up(lg) {
+            padding: 3px;
+            font-size: 100%;
+          }
+        }
+      }
+  
+      .phone-label {
+        vertical-align: top;
+        font-size: 63%;
+        @include media-breakpoint-up(md) {
+          margin-left: 30px;
+        }
+        @include media-breakpoint-up(lg) {
+          margin-left: auto;
+          font-size: 85%;
+          line-height: inherit;
+        }
+        font-weight: 600;
+      }
+    }
+  }
